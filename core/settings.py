@@ -43,11 +43,11 @@ INSTALLED_APPS = [
     #installed apps
      'rest_framework',
      'rest_framework_simplejwt',
-     "phonenumber_field",
+      'phonenumber_field',
      
           #project apps 
      'accounts.apps.AccountsConfig',
-     'contacts.apps.ContactsConfig'
+     'contacts.apps.ContactsConfig',
   
      
 ]
