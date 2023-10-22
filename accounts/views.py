@@ -11,7 +11,6 @@ from rest_framework import status
 @api_view(['POST','GET'])
 def register(request):
     serializer=RegisterSerializer(data=request.data)
-    print(request.data)
     serializer.is_valid(raise_exception=True)
     serializer.save()
     return Response(data='Successfully Registered',status=status.HTTP_201_CREATED)
